@@ -8,22 +8,24 @@
     </head>
     
     <body>
-        <h1>Hello</h1>
+        <h1>Please fill out your details below to enter the site!</h1>
         <button onclick=popUp1();>
-            Click me for popUp1
+            Users Age
         </button>
         
         <button onclick=popUp2();>
-            Click me for popUp2
+            Users Name
         </button>
         <script>
-            function popUp1(){
-                alert();
-            }
             
+            var age=prompt("How old are you?");
+            var name=prompt("What is your name?");
+            
+            function popUp1(){
+                alert(name);
+            }
             function popUp2(){
-                prompt();
-                confirm();
+                alert(age);
             }
         </script>
         
