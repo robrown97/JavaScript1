@@ -1,33 +1,62 @@
-<doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Website</title>
-        <link rel="stylesheet" href="style.css"/>
-        
-        
-    </head>
-    
-    <body>
-        <h1>Please fill out your details below to enter the site!</h1>
-        <button onclick=popUp1();>
-            Users Age
-        </button>
-        
-        <button onclick=popUp2();>
-            Users Name
-        </button>
-        <script>
-            
-            var age=prompt("How old are you?");
-            var name=prompt("What is your name?");
-            
-            function popUp1(){
-                alert(name);
-            }
-            function popUp2(){
-                alert(age);
-            }
-        </script>
-        
-    </body>
+	<head>
+		<title>
+			JavaScript 1
+		</title>		
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Hello!</h1>
+		<button onmouseover=popup1();>
+			Click me for popup1!
+		</button>
+		<button onmouseover=popup2();>
+			Click me for popup2!
+		</button>
+		<script>
+		var age=parseInt(prompt("What is your age?"));
+		var name=prompt("What is your name?");
+		if(age>=18 && age<35){
+			var id=confirm("Do you have ID");
+			if(id==true){
+				alert("Welcome "+name+"!");
+			}
+			else{
+				alert("Not tonight bud");
+			}			
+		}
+		else if(age>=35){
+			alert("In for free!");
+		}
+		else{
+			alert("Go away!");
+		}
+		
+		
+		
+		function popup1(){
+			alert(name);
+		}
+		function popup2(){
+			alert(age);
+		}
+		</script>
+	</body>
 </html>
+
+        
+    
+        <!-- if(this is true){
+            (do this)
+            }
+
+            else if (this is true){
+                (do something else)
+            }
+        -->
+        <!-- (=) sign is an assignment opperator -->
+        <!-- (==) means equals-->
+        <!-- (||) means OR-->
+        <!-- (&&) means AND-->
+  
